@@ -31,7 +31,7 @@
 
     - role: npm
 
-    - role: start_serivces
+    - role: start_services
       dest_folder: '{{ dest_dir }}/projects'
 
     - role: remove_favorites
