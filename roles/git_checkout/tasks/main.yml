@@ -1,0 +1,35 @@
+---
+- name: checkout party-service
+  git:
+    repo: 'https://github.com/adessoSchweiz/party-service'
+    dest: '{{ dest_folder }}/party-service'
+
+- name: checkout passenger
+  git:
+    repo: 'https://github.com/adessoSchweiz/passenger'
+    dest: '{{ dest_folder }}/passenger'
+
+- name: checkout query-service
+  git:
+    repo: 'https://github.com/adessoSchweiz/query-service'
+    dest: '{{ dest_folder }}/query-service'
+
+- name: checkout local-kafka-setup
+  git:
+    repo: 'https://github.com/adessoSchweiz/local-kafka-setup'
+    dest: '{{ dest_folder }}/local-kafka-setup'
+
+- name: checkout route-service
+  git:
+    repo: 'https://github.com/adessoSchweiz/route-service'
+    dest: '{{ dest_folder }}/route-service'
+
+- name: checkout party-ui
+  git:
+    repo: 'https://github.com/adessoSchweiz/party-ui'
+    dest: '{{ dest_folder }}/party-ui'
+
+- name: checkout mssql-centos
+  git:
+    repo: 'https://github.com/adessoSchweiz/mssql-centos'
+    dest: '{{ dest_folder }}/mssql-centos'

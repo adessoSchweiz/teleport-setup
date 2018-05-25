@@ -1,0 +1,40 @@
+---
+- src: https://github.com/adessoAnsible/git
+  scm: git
+  name: git
+
+- src: https://github.com/adessoAnsible/vim
+  scm: git
+  name: vim
+
+- src: https://github.com/adessoAnsible/jdk
+  scm: git
+  name: jdk
+
+- src: https://github.com/adessoAnsible/maven
+  scm: git
+  name: maven
+
+- src: https://github.com/adessoAnsible/intellij
+  scm: git
+  name: intellij
+
+- src: https://github.com/adessoAnsible/docker
+  scm: git
+  name: docker
+
+- src: https://github.com/adessoAnsible/curl
+  scm: git
+  name: curl
+
+- src: https://github.com/adessoAnsible/docker_compose
+  scm: git
+  name: docker_compose
+
+- src: https://github.com/adessoAnsible/npm
+  scm: git
+  name: npm
+
+- src: https://github.com/adessoAnsible/remove_favorites
+  scm: git
+  name: remove_favorites

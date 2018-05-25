@@ -1,0 +1,24 @@
+---
+- name: build and start kafka
+  command: "{{ dest_folder }}/local-kafka-setup/startKafka.sh"
+  become: yes
+
+- name: build and start mssql-service
+  command: "{{ dest_folder }}/mssql-service/build-run.sh"
+  become: yes
+
+- name: build and start party
+  command: "{{ dest_folder }}/party-service/build-run.sh"
+  become: yes
+
+- name: build and start passenger
+  command: "{{ dest_folder }}/passenger/build-run.sh"
+  become: yes
+
+- name: build and start passenger
+  command: "{{ dest_folder }}/passenger/build-run.sh"
+  become: yes
+
+- name: build and start query-service
+  command: "{{ dest_folder }}/query-service/build-run.sh"
+  become: yes

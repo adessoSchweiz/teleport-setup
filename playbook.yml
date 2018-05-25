@@ -1,0 +1,37 @@
+---
+- hosts: basicSetUp
+
+  become: yes
+
+  vars:
+    ansible_sudo_pass: 'vagrant'
+
+  roles:
+    - git
+    - vim
+    - jdk
+    - maven
+    - curl
+
+- hosts: basicSetUp
+
+  vars:
+    dest_dir: '/home/{{ ansible_user }}'
+
+  roles:
+    - role: git_checkout
+      dest_folder: '{{ dest_dir }}/projects'
+
+    - role: intellij
+      dest_folder: '{{ dest_dir }}/Desktop'
+
+    - role: docker
+
+    - role: docker_compose
+
+    - role: npm
+
+    - role: start_serivces
+      dest_folder: '{{ dest_dir }}/projects'
+
+    - role: remove_favorites
