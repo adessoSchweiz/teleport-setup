@@ -20,5 +20,8 @@
 - name: build and start query-service
   command: "{{ dest_folder }}/query-service/build-run.sh"
 
-- name: build and start party-ui
+- name: build party-ui
+  command: "{{ dest_folder }}/party-ui/buildAndPushImage.sh"
+
+- name: start party-ui
   command: "{{ dest_folder }}/party-ui/startContainer.sh"
